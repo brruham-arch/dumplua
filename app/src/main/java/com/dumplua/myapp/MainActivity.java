@@ -321,7 +321,7 @@ public class MainActivity extends Activity {
             boolean ok = decompile(s, d) == null;
             if (ok) saveDec(d, nameOf(u));
             if (nonGc64(s)) {
-                if (ok) copy(new FileInputStream(d), new FileOutputStream(s));
+                if (ok) runCopy(d, s);
                 else return scan(s);
             }
         }
@@ -409,6 +409,13 @@ public class MainActivity extends Activity {
         } catch (Exception e) {
             decNote = "Hasil decompile gagal disimpan ke Download: " + e;
         }
+    }
+
+    void runCopy(File d, File s) throws IOException {
+        String head = "local __n=setmetatable({},{__index=function(t) return t end,__call=function(t) return t end,__tostring=function() return '' end});for __i=0,255 do _G['uv'..__i]=__n end; ";
+        FileOutputStream o = new FileOutputStream(s);
+        o.write(head.getBytes("UTF-8"));
+        copy(new FileInputStream(d), o);
     }
 
     String read(InputStream in) throws IOException {
