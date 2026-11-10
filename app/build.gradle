@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+    id 'com.chaquo.python'
+}
+android {
+    namespace 'com.dumplua.myapp'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.dumplua.myapp'
+        minSdk 24
+        targetSdk 28
+        versionCode 1
+        versionName '1.0'
+        ndk { abiFilters 'arm64-v8a' }
+        python { version '3.12' }
+    }
+    packaging { jniLibs { useLegacyPackaging = true } }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

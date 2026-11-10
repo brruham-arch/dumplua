@@ -1,0 +1,3718 @@
+=== MoNetLoader API Dump ===
+Waktu: Sat Mar 21 09:30:41 2026
+Dir: /storage/emulated/0/Android/media/com.package.clien/monetloader
+
+AudioStream -> table
+
+MONET_DPI_SCALE -> number
+
+MONET_GTASA_BASE -> number
+
+MONET_SAMP_BASE -> number
+
+MONET_VERSION -> number
+
+PLAYER_HANDLE -> number
+
+PLAYER_PED -> number
+
+_G -> table
+
+_VERSION -> string
+
+activateGarage -> function
+
+activateHeliSpeedCheat -> function
+
+activateInteriorPeds -> function
+
+activateMenuItem -> function
+
+activatePimpCheat -> function
+
+activateSaveMenu -> function
+
+addAmmoToChar -> function
+
+addArmourToChar -> function
+
+addAttractor -> function
+
+addBigGunFlash -> function
+
+addBlipForCar -> function
+
+addBlipForCarOld -> function
+
+addBlipForChar -> function
+
+addBlipForCoord -> function
+
+addBlipForCoordOld -> function
+
+addBlipForDeadChar -> function
+
+addBlipForObject -> function
+
+addBlipForPickup -> function
+
+addBlipForSearchlight -> function
+
+addBlood -> function
+
+addButtonFlag -> function
+
+addCharDecisionMakerEventResponse -> function
+
+addEventHandler -> function
+
+addExplosion -> function
+
+addExplosionNoSound -> function
+
+addExplosionVariableShake -> function
+
+addGroupDecisionMakerEventResponse -> function
+
+addHospitalRestart -> function
+
+addNextMessageToPreviousBriefs -> function
+
+addOneOffSound -> function
+
+addPedtypeAsAttractorUser -> function
+
+addPoliceRestart -> function
+
+addPriceModifier -> function
+
+addSetPiece -> function
+
+addShopItem -> function
+
+addShortRangeSpriteBlipForContactPoint -> function
+
+addShortRangeSpriteBlipForCoord -> function
+
+addSmokeParticle -> function
+
+addSparks -> function
+
+addSphere -> function
+
+addSpriteBlipForContactPoint -> function
+
+addSpriteBlipForCoord -> function
+
+addStuckCarCheck -> function
+
+addStuckCarCheckWithWarp -> function
+
+addStuntJump -> function
+
+addToCarRotationVelocity -> function
+
+addToObjectRotationVelocity -> function
+
+addToObjectVelocity -> function
+
+addUpsidedownCarCheck -> function
+
+addVehicleMod -> function
+
+addVelocityRelativeToObjectVelocity -> function
+
+addWidgetFlag -> function
+
+allocateMemory -> function
+
+allocateStreamedScriptToObject -> function
+
+allocateStreamedScriptToRandomPed -> function
+
+allowFixedCameraCollision -> function
+
+allowPauseInWidescreen -> function
+
+alterWantedLevel -> function
+
+alterWantedLevelNoDrop -> function
+
+anchorBoat -> function
+
+applyBrakesToPlayersCar -> function
+
+applyForceToCar -> function
+
+areAnyCarCheatsActivated -> function
+
+areAnyCharsNearChar -> function
+
+areCreditsFinished -> function
+
+areMeasurementsInMetres -> function
+
+areSubtitlesSwitchedOn -> function
+
+assert -> function
+
+attachAnimsToModel -> function
+
+attachCameraToChar -> function
+
+attachCameraToCharLookAtChar -> function
+
+attachCameraToVehicle -> function
+
+attachCameraToVehicleLookAtChar -> function
+
+attachCameraToVehicleLookAtVehicle -> function
+
+attachCarToCar -> function
+
+attachCarToObject -> function
+
+attachCharToBike -> function
+
+attachCharToCar -> function
+
+attachCharToObject -> function
+
+attachFxSystemToCharBone -> function
+
+attachMissionAudioToCar -> function
+
+attachMissionAudioToChar -> function
+
+attachMissionAudioToObject -> function
+
+attachObjectToCar -> function
+
+attachObjectToChar -> function
+
+attachObjectToObject -> function
+
+attachSearchlightToSearchlightObject -> function
+
+attachTrailerToCab -> function
+
+attachWinchToHeli -> function
+
+autoSave -> function
+
+awardPlayerMissionRespect -> function
+
+bit -> table
+
+boatGotoCoords -> function
+
+boatStop -> function
+
+breakObject -> function
+
+buildPlayerModel -> function
+
+burstCarTire -> function
+
+buyItem -> function
+
+cameraIsVectorMoveRunning -> function
+
+cameraIsVectorTrackRunning -> function
+
+cameraPersistFov -> function
+
+cameraPersistPos -> function
+
+cameraPersistTrack -> function
+
+cameraResetNewScriptables -> function
+
+cameraSetLerpFov -> function
+
+cameraSetShakeSimulationSimple -> function
+
+cameraSetVectorMove -> function
+
+cameraSetVectorTrack -> function
+
+canCharSeeDeadChar -> function
+
+canTriggerGangWarWhenOnAMission -> function
+
+cancelOverrideRestart -> function
+
+carGotoCoordinates -> function
+
+carGotoCoordinatesAccurate -> function
+
+carGotoCoordinatesRacing -> function
+
+carSetIdle -> function
+
+carWanderRandomly -> function
+
+changeBlipColour -> function
+
+changeBlipDisplay -> function
+
+changeBlipScale -> function
+
+changeCarColour -> function
+
+changeCarColourFromMenu -> function
+
+changeGarageType -> function
+
+changePlaybackToUseAi -> function
+
+checkpointSave -> function
+
+checkpointSaveOddjob -> function
+
+clearAllCharRelationships -> function
+
+clearAllScriptFireFlags -> function
+
+clearAllScriptRoadblocks -> function
+
+clearArea -> function
+
+clearAreaOfCars -> function
+
+clearAreaOfChars -> function
+
+clearAttractor -> function
+
+clearCarLastDamageEntity -> function
+
+clearCarLastWeaponDamage -> function
+
+clearCharDecisionMakerEventResponse -> function
+
+clearCharLastDamageEntity -> function
+
+clearCharLastWeaponDamage -> function
+
+clearCharRelationship -> function
+
+clearCharTasks -> function
+
+clearCharTasksImmediately -> function
+
+clearConversationForChar -> function
+
+clearCutscene -> function
+
+clearExtraColours -> function
+
+clearGroupDecisionMakerEventResponse -> function
+
+clearGxtEntry -> function
+
+clearHeliOrientation -> function
+
+clearHelp -> function
+
+clearLastBuildingModelShotByPlayer -> function
+
+clearLoadedShop -> function
+
+clearLookAt -> function
+
+clearMissionAudio -> function
+
+clearObjectLastWeaponDamage -> function
+
+clearOnscreenCounter -> function
+
+clearOnscreenTimer -> function
+
+clearPrints -> function
+
+clearRelationship -> function
+
+clearSequenceTask -> function
+
+clearSkip -> function
+
+clearSmallPrints -> function
+
+clearSpecificZonesToTriggerGangWar -> function
+
+clearThisBigPrint -> function
+
+clearThisPrint -> function
+
+clearThisPrintBigNow -> function
+
+clearWantedLevel -> function
+
+clearWantedLevelInGarage -> function
+
+closeAllCarDoors -> function
+
+closeGarage -> function
+
+closeSequenceTask -> function
+
+collectgarbage -> function
+
+connectLods -> function
+
+controlCarDoor -> function
+
+controlCarHydraulics -> function
+
+controlMovableVehiclePart -> function
+
+convert3DCoordsToScreen -> function
+
+convert3DCoordsToScreenEx -> function
+
+convertGameScreenCoordsToWindowScreenCoords -> function
+
+convertMatrixToQuaternion -> function
+
+convertMetresToFeet -> function
+
+convertMetresToFeetInt -> function
+
+convertQuaternionToMatrix -> function
+
+convertScreenCoordsToWorld3D -> function
+
+convertWindowScreenCoordsToGameScreenCoords -> function
+
+copyCharDecisionMaker -> function
+
+copyGroupDecisionMaker -> function
+
+copySharedCharDecisionMaker -> function
+
+coroutine -> table
+
+createBirds -> function
+
+createCar -> function
+
+createCarGenerator -> function
+
+createCarGeneratorWithPlate -> function
+
+createChar -> function
+
+createCharAsPassenger -> function
+
+createCharAtAttractor -> function
+
+createCharInsideCar -> function
+
+createCheckpoint -> function
+
+createDirectory -> function
+
+createEmergencyServicesCar -> function
+
+createForsalePropertyPickup -> function
+
+createFxSystem -> function
+
+createFxSystemOnCar -> function
+
+createFxSystemOnCarWithDirection -> function
+
+createFxSystemOnChar -> function
+
+createFxSystemOnCharWithDirection -> function
+
+createFxSystemOnObject -> function
+
+createFxSystemOnObjectWithDirection -> function
+
+createGroup -> function
+
+createHorseshoePickup -> function
+
+createLockedPropertyPickup -> function
+
+createMenu -> function
+
+createMenuGrid -> function
+
+createMissionTrain -> function
+
+createMoneyPickup -> function
+
+createObject -> function
+
+createObjectNoOffset -> function
+
+createOysterPickup -> function
+
+createPickup -> function
+
+createPickupWithAmmo -> function
+
+createPlayer -> function
+
+createProtectionPickup -> function
+
+createRandomCarForCarPark -> function
+
+createRandomChar -> function
+
+createRandomCharAsDriver -> function
+
+createRandomCharAsPassenger -> function
+
+createScriptRoadblock -> function
+
+createSearchlight -> function
+
+createSearchlightOnVehicle -> function
+
+createShopWidget -> function
+
+createSnapshotPickup -> function
+
+createSwatRope -> function
+
+createUser3dMarker -> function
+
+customPlateDesignForNextCar -> function
+
+customPlateForNextCar -> function
+
+damageCarDoor -> function
+
+damageCarPanel -> function
+
+damageChar -> function
+
+deactivateGarage -> function
+
+debug -> table
+
+declareMissionFlag -> function
+
+decodeJson -> function
+
+decrementFloatStat -> function
+
+decrementIntStat -> function
+
+deleteAllTrains -> function
+
+deleteCar -> function
+
+deleteChar -> function
+
+deleteCheckpoint -> function
+
+deleteMenu -> function
+
+deleteMissionTrain -> function
+
+deleteMissionTrains -> function
+
+deleteObject -> function
+
+deletePlayer -> function
+
+deleteSearchlight -> function
+
+deleteWidget -> function
+
+detachCar -> function
+
+detachCharFromCar -> function
+
+detachObject -> function
+
+detachTrailerFromCab -> function
+
+disableAllEntryExits -> function
+
+disableCharSpeech -> function
+
+disableHeliAudio -> function
+
+disablePlayerSprint -> function
+
+displayCarNames -> function
+
+displayHud -> function
+
+displayNonMinigameHelpMessages -> function
+
+displayNthOnscreenCounterWithString -> function
+
+displayOnscreenCounterWithString -> function
+
+displayOnscreenTimer -> function
+
+displayOnscreenTimerWithString -> function
+
+displayRadar -> function
+
+displayText -> function
+
+displayTextClamped -> function
+
+displayTextWidget -> function
+
+displayTextWith2Numbers -> function
+
+displayTextWithFloat -> function
+
+displayTextWithNumber -> function
+
+displayTextWithNumberClamped -> function
+
+displayZoneNames -> function
+
+do2dRectanglesCollide -> function
+
+doCameraBump -> function
+
+doFade -> function
+
+doMissionSkip -> function
+
+doWeaponStuffAtStartOf2pGame -> function
+
+doesBlipExist -> function
+
+doesCarHaveHydraulics -> function
+
+doesCarHaveStuckCarCheck -> function
+
+doesCharExist -> function
+
+doesDecisionMakerExist -> function
+
+doesDirectoryExist -> function
+
+doesFileExist -> function
+
+doesGroupExist -> function
+
+doesObjectExist -> function
+
+doesObjectHaveThisModel -> function
+
+doesPickupExist -> function
+
+doesScriptFireExist -> function
+
+doesSearchlightExist -> function
+
+doesVehicleExist -> function
+
+dofile -> function
+
+dontRemoveChar -> function
+
+dontRemoveObject -> function
+
+dontSuppressAnyCarModels -> function
+
+dontSuppressCarModel -> function
+
+drawCorona -> function
+
+drawCrosshair -> function
+
+drawLightWithRange -> function
+
+drawOddjobTitleBeforeFade -> function
+
+drawRect -> function
+
+drawShadow -> function
+
+drawSphere -> function
+
+drawSprite -> function
+
+drawSpriteWithRotation -> function
+
+drawSubtitlesBeforeFade -> function
+
+drawWeaponshopCorona -> function
+
+drawWindow -> function
+
+dropObject -> function
+
+dropSecondObject -> function
+
+enableAmbientCrime -> function
+
+enableBurglaryHouses -> function
+
+enableCharSpeech -> function
+
+enableConversation -> function
+
+enableCraneControls -> function
+
+enableDisabledAttractorsOnObject -> function
+
+enableEntryExitPlayerGroupWarping -> function
+
+encodeJson -> function
+
+ensurePlayerHasDriveByWeapon -> function
+
+error -> function
+
+explodeCar -> function
+
+explodeCarInCutscene -> function
+
+explodeCarInCutsceneShakeAndBits -> function
+
+explodeCharHead -> function
+
+extendPatrolRoute -> function
+
+extendRoute -> function
+
+extinguishFireAtPoint -> function
+
+failCurrentMission -> function
+
+failKillFrenzy -> function
+
+fetchNextCard -> function
+
+findAllRandomCharsInSphere -> function
+
+findAllRandomObjectsInSphere -> function
+
+findAllRandomVehiclesInSphere -> function
+
+findMaxNumberOfGroupMembers -> function
+
+findNumberTagsTagged -> function
+
+findTrainDirection -> function
+
+finishSettingUpConversation -> function
+
+finishSettingUpConversationNoSubtitles -> function
+
+fireHunterGun -> function
+
+fireSingleBullet -> function
+
+fixCar -> function
+
+fixCarDoor -> function
+
+fixCarPanel -> function
+
+fixCarTire -> function
+
+flashHudObject -> function
+
+flushPatrolRoute -> function
+
+flushRoute -> function
+
+forceAllVehicleLightsOff -> function
+
+forceBigMessageAndCounter -> function
+
+forceCarLights -> function
+
+forceDeathRestart -> function
+
+forceInteriorLightingForPlayer -> function
+
+forceWeather -> function
+
+forceWeatherNow -> function
+
+freeMemory -> function
+
+freezeCarPosition -> function
+
+freezeCarPositionAndDontLoadCollision -> function
+
+freezeCharPosition -> function
+
+freezeCharPositionAndDontLoadCollision -> function
+
+freezeObjectPosition -> function
+
+freezeOnscreenTimer -> function
+
+gcinfo -> function
+
+get2dLinesIntersectPoint -> function
+
+getActiveCameraCoordinates -> function
+
+getActiveCameraPointAt -> function
+
+getActiveInterior -> function
+
+getAllChars -> function
+
+getAllObjects -> function
+
+getAllVehicles -> function
+
+getAmmoInCharWeapon -> function
+
+getAngleBetween2dVectors -> function
+
+getAudioStreamLength -> function
+
+getAudioStreamState -> function
+
+getAudioStreamVolume -> function
+
+getAvailableVehicleMod -> function
+
+getBeatProximity -> function
+
+getBeatTrackStatus -> function
+
+getCameraFov -> function
+
+getCarBlockingCar -> function
+
+getCarCharIsUsing -> function
+
+getCarColours -> function
+
+getCarCoordinates -> function
+
+getCarCurrentGear -> function
+
+getCarDoorLockStatus -> function
+
+getCarForwardX -> function
+
+getCarForwardY -> function
+
+getCarHeading -> function
+
+getCarHealth -> function
+
+getCarMass -> function
+
+getCarModel -> function
+
+getCarModelValue -> function
+
+getCarMovingComponentOffset -> function
+
+getCarNumberOfGears -> function
+
+getCarPitch -> function
+
+getCarPointer -> function
+
+getCarRoll -> function
+
+getCarSpeed -> function
+
+getCarSpeedVector -> function
+
+getCarUprightValue -> function
+
+getCharActiveInterior -> function
+
+getCharAnimCurrentTime -> function
+
+getCharAnimTotalTime -> function
+
+getCharArmour -> function
+
+getCharCoordinates -> function
+
+getCharHeading -> function
+
+getCharHealth -> function
+
+getCharHeightAboveGround -> function
+
+getCharHighestPriorityEvent -> function
+
+getCharInCarPassengerSeat -> function
+
+getCharModel -> function
+
+getCharPlayerIsTargeting -> function
+
+getCharPointer -> function
+
+getCharPointerHandle -> function
+
+getCharQuaternion -> function
+
+getCharSpeed -> function
+
+getCharSwimState -> function
+
+getCharVelocity -> function
+
+getCharWeaponInSlot -> function
+
+getCityFromCoords -> function
+
+getCityPlayerIsIn -> function
+
+getClipboardText -> function
+
+getClosestCarNode -> function
+
+getClosestCarNodeWithHeading -> function
+
+getClosestCharNode -> function
+
+getClosestStealableObject -> function
+
+getClosestStraightRoad -> function
+
+getClothesItem -> function
+
+getControllerMode -> function
+
+getCurrentCarMod -> function
+
+getCurrentCharWeapon -> function
+
+getCurrentDate -> function
+
+getCurrentDayOfWeek -> function
+
+getCurrentLanguage -> function
+
+getCurrentPopulationZoneType -> function
+
+getCurrentVehiclePaintjob -> function
+
+getCutsceneOffset -> function
+
+getCutsceneTime -> function
+
+getDeadCharCoordinates -> function
+
+getDeadCharPickupCoords -> function
+
+getDebugCameraCoordinates -> function
+
+getDebugCameraPointAt -> function
+
+getDistanceBetweenCoords2d -> function
+
+getDistanceBetweenCoords3d -> function
+
+getDoorAngleRatio -> function
+
+getDriverOfCar -> function
+
+getExtraCarColours -> function
+
+getFadingStatus -> function
+
+getFloatStat -> function
+
+getFreeGxtKey -> function
+
+getGameDirectory -> function
+
+getGameTimer -> function
+
+getGroundZFor3dCoord -> function
+
+getGroupMember -> function
+
+getGroupSize -> function
+
+getGxtText -> function
+
+getHashKey -> function
+
+getHeadingFromVector2d -> function
+
+getHudColour -> function
+
+getIntStat -> function
+
+getItemInShop -> function
+
+getLevelDesignCoordsForObject -> function
+
+getLoadedShop -> function
+
+getMaxWantedLevel -> function
+
+getMaximumNumberOfPassengers -> function
+
+getMenuItemAccepted -> function
+
+getMenuItemSelected -> function
+
+getMinutesToTimeOfDay -> function
+
+getMissionNum -> function
+
+getMissionPage -> function
+
+getModelDimensions -> function
+
+getMoonloaderVersion -> function
+
+getNameOfEntryExitCharUsed -> function
+
+getNameOfInfoZone -> function
+
+getNameOfItem -> function
+
+getNameOfZone -> function
+
+getNearestTagPosition -> function
+
+getNthClosestCarNode -> function
+
+getNthClosestCarNodeWithHeading -> function
+
+getNumAvailablePaintjobs -> function
+
+getNumCarColours -> function
+
+getNumOfModelsKilledByPlayer -> function
+
+getNumberOfFiresInArea -> function
+
+getNumberOfFiresInRange -> function
+
+getNumberOfFollowers -> function
+
+getNumberOfInstancesOfStreamedScript -> function
+
+getNumberOfItemsInShop -> function
+
+getNumberOfPassengers -> function
+
+getObjectAnimCurrentTime -> function
+
+getObjectCoordinates -> function
+
+getObjectHeading -> function
+
+getObjectHealth -> function
+
+getObjectMass -> function
+
+getObjectModel -> function
+
+getObjectPointer -> function
+
+getObjectPointerHandle -> function
+
+getObjectQuaternion -> function
+
+getObjectRotationVelocity -> function
+
+getObjectSpeed -> function
+
+getObjectTurnMass -> function
+
+getObjectVelocity -> function
+
+getOffsetFromCarInWorldCoords -> function
+
+getOffsetFromCharInWorldCoords -> function
+
+getOffsetFromObjectInWorldCoords -> function
+
+getPadState -> function
+
+getParkingNodeInArea -> function
+
+getPcMouseMovement -> function
+
+getPedType -> function
+
+getPercentageTaggedInArea -> function
+
+getPickupCoordinates -> function
+
+getPlaneUndercarriagePosition -> function
+
+getPlayerChar -> function
+
+getPlayerGroup -> function
+
+getPlayerInCarCameraMode -> function
+
+getPlayerMaxArmour -> function
+
+getPlayerMoney -> function
+
+getPositionOfAnalogueSticks -> function
+
+getPositionOfEntryExitCharUsed -> function
+
+getPriceOfItem -> function
+
+getProgressPercentage -> function
+
+getRadioChannel -> function
+
+getRandomCarInSphereNoSave -> function
+
+getRandomCarModelInMemory -> function
+
+getRandomCarOfTypeInAngledAreaNoSave -> function
+
+getRandomCarOfTypeInArea -> function
+
+getRandomCarOfTypeInAreaNoSave -> function
+
+getRandomCharInAreaOffsetNoSave -> function
+
+getRandomCharInSphere -> function
+
+getRandomCharInSphereNoBrain -> function
+
+getRandomCharInSphereOnlyDrugsBuyers -> function
+
+getRandomCharInZone -> function
+
+getRemoteControlledCar -> function
+
+getRidOfPlayerProstitute -> function
+
+getRopeHeightForObject -> function
+
+getScreenResolution -> function
+
+getScriptFireCoords -> function
+
+getScriptTaskStatus -> function
+
+getSequenceProgress -> function
+
+getSequenceProgressRecursive -> function
+
+getShoppingExtraInfo -> function
+
+getSoundLevelAtCoords -> function
+
+getStringWidth -> function
+
+getStringWidthWithNumber -> function
+
+getStructElement -> function
+
+getStructFloatElement -> function
+
+getTargetBlipCoordinates -> function
+
+getTerritoryUnderControlPercentage -> function
+
+getTimeOfDay -> function
+
+getTotalNumberOfPedsKilledByPlayer -> function
+
+getTrainCaboose -> function
+
+getTrainCarriage -> function
+
+getUserOfClosestMapAttractor -> function
+
+getVehicleClass -> function
+
+getVehicleModType -> function
+
+getVehiclePointerHandle -> function
+
+getVehicleQuaternion -> function
+
+getWaterHeightAtCoords -> function
+
+getWeapontypeModel -> function
+
+getWeapontypeSlot -> function
+
+getWheelieStats -> function
+
+getWidgetPosition -> function
+
+getWidgetValue -> function
+
+getWidgetValue2 -> function
+
+getWorkingDirectory -> function
+
+getZoneDealerStrength -> function
+
+getZoneGangStrength -> function
+
+getfenv -> function
+
+getmetatable -> function
+
+giveMeleeAttackToChar -> function
+
+giveNonPlayerCarNitro -> function
+
+givePlayerClothes -> function
+
+givePlayerClothesOutsideShop -> function
+
+givePlayerMoney -> function
+
+giveRemoteControlledModelToPlayer -> function
+
+giveVehiclePaintjob -> function
+
+giveWeaponToChar -> function
+
+grabEntityOnRopeForObject -> function
+
+grabEntityOnWinch -> function
+
+hasAnimationLoaded -> function
+
+hasCarBeenDamagedByCar -> function
+
+hasCarBeenDamagedByChar -> function
+
+hasCarBeenDamagedByWeapon -> function
+
+hasCarBeenResprayed -> function
+
+hasCarRecordingBeenLoaded -> function
+
+hasCharBeenArrested -> function
+
+hasCharBeenDamagedByCar -> function
+
+hasCharBeenDamagedByChar -> function
+
+hasCharBeenDamagedByWeapon -> function
+
+hasCharBeenPhotographed -> function
+
+hasCharGotWeapon -> function
+
+hasCharSpottedChar -> function
+
+hasCharSpottedCharInFront -> function
+
+hasCutsceneFinished -> function
+
+hasCutsceneLoaded -> function
+
+hasDeatharrestBeenExecuted -> function
+
+hasGameJustReturnedFromFrontend -> function
+
+hasLanguageChanged -> function
+
+hasMissionAudioFinished -> function
+
+hasMissionAudioLoaded -> function
+
+hasModelLoaded -> function
+
+hasObjectBeenDamaged -> function
+
+hasObjectBeenDamagedByWeapon -> function
+
+hasObjectBeenPhotographed -> function
+
+hasObjectBeenUprooted -> function
+
+hasObjectCollidedWithAnything -> function
+
+hasObjectOfTypeBeenSmashed -> function
+
+hasPickupBeenCollected -> function
+
+hasPlayerBoughtItem -> function
+
+hasSaveGameFinished -> function
+
+hasSpecialCharacterLoaded -> function
+
+hasStreamedScriptLoaded -> function
+
+hasTrainDerailed -> function
+
+hasVehicleModLoaded -> function
+
+heliAttackPlayer -> function
+
+heliFollowEntity -> function
+
+heliGotoCoords -> function
+
+heliKeepEntityInView -> function
+
+heliLandAtCoords -> function
+
+hidImplements -> function
+
+hideAllFrontendBlips -> function
+
+hideCharWeaponForScriptedCutscene -> function
+
+highlightMenuItem -> function
+
+ignoreHeightDifferenceFollowingNodes -> function
+
+import -> function
+
+improveCarByCheating -> function
+
+increasePlayerMaxArmour -> function
+
+increasePlayerMaxHealth -> function
+
+incrementFloatStat -> function
+
+incrementFloatStatNoMessage -> function
+
+incrementIntStat -> function
+
+incrementIntStatNoMessage -> function
+
+initZonePopulationSettings -> function
+
+io -> table
+
+ipairs -> function
+
+is2playerGameGoingOn -> function
+
+isAnyPickupAtCoords -> function
+
+isAreaOccupied -> function
+
+isAttachedPlayerHeadingAchieved -> function
+
+isBigVehicle -> function
+
+isButtonPressed -> function
+
+isCarDead -> function
+
+isCarDoorDamaged -> function
+
+isCarDoorFullyOpen -> function
+
+isCarEngineOn -> function
+
+isCarInAirProper -> function
+
+isCarInArea2d -> function
+
+isCarInArea3d -> function
+
+isCarInWater -> function
+
+isCarLowRider -> function
+
+isCarModel -> function
+
+isCarOnFire -> function
+
+isCarOnScreen -> function
+
+isCarPassengerSeatFree -> function
+
+isCarSirenOn -> function
+
+isCarStopped -> function
+
+isCarStoppedInArea2d -> function
+
+isCarStoppedInArea3d -> function
+
+isCarStreetRacer -> function
+
+isCarStuck -> function
+
+isCarStuckOnRoof -> function
+
+isCarTireBurst -> function
+
+isCarTouchingCar -> function
+
+isCarUpright -> function
+
+isCarUpsidedown -> function
+
+isCarVisiblyDamaged -> function
+
+isCarWaitingForWorldCollision -> function
+
+isCharAtScriptedAttractor -> function
+
+isCharAttachedToAnyCar -> function
+
+isCharDead -> function
+
+isCharDucking -> function
+
+isCharGettingInToACar -> function
+
+isCharHeadMissing -> function
+
+isCharHoldingObject -> function
+
+isCharInAir -> function
+
+isCharInAngledArea2d -> function
+
+isCharInAngledArea3d -> function
+
+isCharInAngledAreaInCar2d -> function
+
+isCharInAngledAreaInCar3d -> function
+
+isCharInAngledAreaOnFoot2d -> function
+
+isCharInAngledAreaOnFoot3d -> function
+
+isCharInAnyBoat -> function
+
+isCharInAnyCar -> function
+
+isCharInAnyHeli -> function
+
+isCharInAnyPlane -> function
+
+isCharInAnyPoliceVehicle -> function
+
+isCharInAnySearchlight -> function
+
+isCharInAnyTrain -> function
+
+isCharInArea2d -> function
+
+isCharInArea3d -> function
+
+isCharInAreaInCar2d -> function
+
+isCharInAreaInCar3d -> function
+
+isCharInAreaOnFoot2d -> function
+
+isCharInAreaOnFoot3d -> function
+
+isCharInCar -> function
+
+isCharInFlyingVehicle -> function
+
+isCharInModel -> function
+
+isCharInSearchlight -> function
+
+isCharInTaxi -> function
+
+isCharInWater -> function
+
+isCharInZone -> function
+
+isCharMale -> function
+
+isCharModel -> function
+
+isCharOnAnyBike -> function
+
+isCharOnFoot -> function
+
+isCharOnScreen -> function
+
+isCharPlayingAnim -> function
+
+isCharRespondingToEvent -> function
+
+isCharShooting -> function
+
+isCharShootingInArea -> function
+
+isCharSittingInAnyCar -> function
+
+isCharSittingInCar -> function
+
+isCharStopped -> function
+
+isCharStoppedInAngledArea2d -> function
+
+isCharStoppedInAngledArea3d -> function
+
+isCharStoppedInAngledAreaInCar2d -> function
+
+isCharStoppedInAngledAreaInCar3d -> function
+
+isCharStoppedInAngledAreaOnFoot2d -> function
+
+isCharStoppedInAngledAreaOnFoot3d -> function
+
+isCharStoppedInArea2d -> function
+
+isCharStoppedInArea3d -> function
+
+isCharStoppedInAreaInCar2d -> function
+
+isCharStoppedInAreaInCar3d -> function
+
+isCharStoppedInAreaOnFoot2d -> function
+
+isCharStoppedInAreaOnFoot3d -> function
+
+isCharStuckUnderCar -> function
+
+isCharSwimming -> function
+
+isCharTalking -> function
+
+isCharTouchingChar -> function
+
+isCharTouchingObject -> function
+
+isCharTouchingObjectOnFoot -> function
+
+isCharTouchingVehicle -> function
+
+isCharUsingMapAttractor -> function
+
+isCharWaitingForWorldCollision -> function
+
+isCheckpointResuming -> function
+
+isCleoLoaded -> function
+
+isClosestObjectOfTypeSmashedOrDamaged -> function
+
+isConversationAtNode -> function
+
+isCopVehicleInArea3dNoSave -> function
+
+isCurrentCharWeapon -> function
+
+isDebugCameraOn -> function
+
+isEmergencyServicesVehicle -> function
+
+isExplosionInArea -> function
+
+isFinalbuild -> function
+
+isFlameInAngledArea2d -> function
+
+isFlameInAngledArea3d -> function
+
+isGamePaused -> function
+
+isGangWarFightingGoingOn -> function
+
+isGangWarGoingOn -> function
+
+isGarageClosed -> function
+
+isGarageOpen -> function
+
+isGroupLeader -> function
+
+isGroupMember -> function
+
+isHelpMessageBeingDisplayed -> function
+
+isHidPressed -> function
+
+isHidReleased -> function
+
+isLastBuildingModelShotByPlayer -> function
+
+isLineOfSightClear -> function
+
+isMessageBeingDisplayed -> function
+
+isMinigameInProgress -> function
+
+isModelAvailable -> function
+
+isModelInCdimage -> function
+
+isMoneyPickupAtCoords -> function
+
+isMouseUsingVerticalInversion -> function
+
+isNextStationAllowed -> function
+
+isNightVisionActive -> function
+
+isObjectAttached -> function
+
+isObjectInAngledArea2d -> function
+
+isObjectInAngledArea3d -> function
+
+isObjectInArea2d -> function
+
+isObjectInArea3d -> function
+
+isObjectInWater -> function
+
+isObjectIntersectingWorld -> function
+
+isObjectOnScreen -> function
+
+isObjectPlayingAnim -> function
+
+isObjectStatic -> function
+
+isObjectWithinBrainActivationRange -> function
+
+isOpcodesAvailable -> function
+
+isPauseMenuActive -> function
+
+isPcUsingJoypad -> function
+
+isPcVersion -> function
+
+isPlaybackGoingOnForCar -> function
+
+isPlayerClimbing -> function
+
+isPlayerControlLocked -> function
+
+isPlayerControlOn -> function
+
+isPlayerControllable -> function
+
+isPlayerDead -> function
+
+isPlayerInInfoZone -> function
+
+isPlayerInPositionForConversation -> function
+
+isPlayerInRemoteMode -> function
+
+isPlayerPerformingStoppie -> function
+
+isPlayerPerformingWheelie -> function
+
+isPlayerPlaying -> function
+
+isPlayerPressingHorn -> function
+
+isPlayerTargettingAnything -> function
+
+isPlayerTargettingChar -> function
+
+isPlayerTargettingObject -> function
+
+isPlayerUsingJetpack -> function
+
+isPlayerWearing -> function
+
+isPointObscuredByAMissionEntity -> function
+
+isPointOnScreen -> function
+
+isProceduralInteriorActive -> function
+
+isProjectileInArea -> function
+
+isRelationshipSet -> function
+
+isSampAvailable -> function
+
+isSampLoaded -> function
+
+isSampfuncsLoaded -> function
+
+isScriptFireExtinguished -> function
+
+isSkipCutsceneButtonPressed -> function
+
+isSkipWaitingForScriptToFadeIn -> function
+
+isThisHelpMessageBeingDisplayed -> function
+
+isThisModelABoat -> function
+
+isThisModelACar -> function
+
+isThisModelAHeli -> function
+
+isThisModelAPlane -> function
+
+isTouchEnabled -> function
+
+isTrailerAttachedToCab -> function
+
+isVehicleAttached -> function
+
+isVehicleInSearchlight -> function
+
+isVehicleOnAllWheels -> function
+
+isVehicleTouchingObject -> function
+
+isWantedLevelGreater -> function
+
+isWidescreenOnInOptions -> function
+
+isWidgetDoubletapped -> function
+
+isWidgetPressed -> function
+
+isWidgetPressedEx -> function
+
+isWidgetReleased -> function
+
+isWidgetSwiped -> function
+
+isWidgetSwipedLeft -> function
+
+isWidgetSwipedRight -> function
+
+jit -> table
+
+killFxSystem -> function
+
+killFxSystemNow -> function
+
+limitAngle -> function
+
+limitTwoPlayerDistance -> function
+
+linkObjectToInterior -> function
+
+listenToPlayerGroupCommands -> function
+
+load -> function
+
+load3dAudioStream -> function
+
+load3dAudioStreamFromMemory -> function
+
+loadAllModelsNow -> function
+
+loadAllStreamingModels -> function
+
+loadAndLaunchMissionInternal -> function
+
+loadAudioStream -> function
+
+loadAudioStreamFromMemory -> function
+
+loadCharDecisionMaker -> function
+
+loadCutscene -> function
+
+loadGroupDecisionMaker -> function
+
+loadMissionAudio -> function
+
+loadMissionText -> function
+
+loadPathNodesInArea -> function
+
+loadPrices -> function
+
+loadScene -> function
+
+loadSceneInDirection -> function
+
+loadShop -> function
+
+loadSpecialCharacter -> function
+
+loadSprite -> function
+
+loadTextureDictionary -> function
+
+loadfile -> function
+
+loadstring -> function
+
+locateCar2d -> function
+
+locateCar3d -> function
+
+locateCharAnyMeans2d -> function
+
+locateCharAnyMeans3d -> function
+
+locateCharAnyMeansCar2d -> function
+
+locateCharAnyMeansCar3d -> function
+
+locateCharAnyMeansChar2d -> function
+
+locateCharAnyMeansChar3d -> function
+
+locateCharAnyMeansObject2d -> function
+
+locateCharAnyMeansObject3d -> function
+
+locateCharInCar2d -> function
+
+locateCharInCar3d -> function
+
+locateCharInCarCar2d -> function
+
+locateCharInCarCar3d -> function
+
+locateCharInCarChar2d -> function
+
+locateCharInCarChar3d -> function
+
+locateCharInCarObject2d -> function
+
+locateCharInCarObject3d -> function
+
+locateCharOnFoot2d -> function
+
+locateCharOnFoot3d -> function
+
+locateCharOnFootCar2d -> function
+
+locateCharOnFootCar3d -> function
+
+locateCharOnFootChar2d -> function
+
+locateCharOnFootChar3d -> function
+
+locateCharOnFootObject2d -> function
+
+locateCharOnFootObject3d -> function
+
+locateObject2d -> function
+
+locateObject3d -> function
+
+locateStoppedCar2d -> function
+
+locateStoppedCar3d -> function
+
+locateStoppedCharAnyMeans2d -> function
+
+locateStoppedCharAnyMeans3d -> function
+
+locateStoppedCharInCar2d -> function
+
+locateStoppedCharInCar3d -> function
+
+locateStoppedCharOnFoot2d -> function
+
+locateStoppedCharOnFoot3d -> function
+
+lockCarDoors -> function
+
+lockDoor -> function
+
+lockPlayerControl -> function
+
+lua_thread -> table
+
+main -> function
+
+makeHeliComeCrashingDown -> function
+
+makeObjectTargettable -> function
+
+makePlayerFireProof -> function
+
+makePlayerGangDisappear -> function
+
+makePlayerGangReappear -> function
+
+makePlayerSafe -> function
+
+makeRoomInPlayerGangForMissionPeds -> function
+
+manageAllPopulation -> function
+
+markCarAsConvoyCar -> function
+
+markCarAsNoLongerNeeded -> function
+
+markCharAsNoLongerNeeded -> function
+
+markMissionTrainAsNoLongerNeeded -> function
+
+markMissionTrainsAsNoLongerNeeded -> function
+
+markModelAsNoLongerNeeded -> function
+
+markObjectAsNoLongerNeeded -> function
+
+markRoadNodeAsDontWander -> function
+
+markStreamedScriptAsNoLongerNeeded -> function
+
+markVehicleModAsNoLongerNeeded -> function
+
+math -> table
+
+module -> function
+
+monet_cp1251_to_utf8 -> function
+
+monet_is_audiostream_available -> function
+
+monet_utf8_to_cp1251 -> function
+
+moveSearchlightBetweenCoords -> function
+
+newproxy -> function
+
+next -> function
+
+null -> userdata
+
+openCarDoor -> function
+
+openCarDoorABit -> function
+
+openGarage -> function
+
+openSequenceTask -> function
+
+os -> table
+
+overrideNextRestart -> function
+
+package -> table
+
+pairs -> function
+
+pauseCurrentBeatTrack -> function
+
+pausePlaybackRecordedCar -> function
+
+pcall -> function
+
+performSequenceTask -> function
+
+performSequenceTaskFromProgress -> function
+
+placeObjectRelativeToCar -> function
+
+planeAttackPlayer -> function
+
+planeAttackPlayerUsingDogFight -> function
+
+planeFlyInDirection -> function
+
+planeFollowEntity -> function
+
+planeGotoCoords -> function
+
+planeStartsInAir -> function
+
+playAndKillFxSystem -> function
+
+playBeatTrack -> function
+
+playFxSystem -> function
+
+playMissionAudio -> function
+
+playMissionPassedTune -> function
+
+playObjectAnim -> function
+
+playerEnteredBuildingsiteCrane -> function
+
+playerEnteredDockCrane -> function
+
+playerEnteredLasVegasCrane -> function
+
+playerEnteredQuarryCrane -> function
+
+playerHandle -> number
+
+playerLeftCrane -> function
+
+playerMadeProgress -> function
+
+playerPed -> number
+
+playerTakeOffGoggles -> function
+
+pointCameraAtCar -> function
+
+pointCameraAtChar -> function
+
+pointCameraAtPoint -> function
+
+pointSearchlightAtChar -> function
+
+pointSearchlightAtCoord -> function
+
+pointSearchlightAtVehicle -> function
+
+policeHeliChaseEntity -> function
+
+popCarBoot -> function
+
+popCarDoor -> function
+
+popCarPanel -> function
+
+preloadBeatTrack -> function
+
+print -> function
+
+printBig -> function
+
+printBigQ -> function
+
+printHelp -> function
+
+printHelpConditional -> function
+
+printHelpConditionalHid -> function
+
+printHelpConditionalHidJoypad -> function
+
+printHelpConditionalHidKeyboard -> function
+
+printHelpConditionalTouch -> function
+
+printHelpConditionalTouchAdapted -> function
+
+printHelpConditionalTouchAnalog -> function
+
+printHelpConditionalTouchClassic -> function
+
+printHelpForever -> function
+
+printHelpForeverConditional -> function
+
+printHelpForeverConditionalHid -> function
+
+printHelpForeverConditionalHidJoypad -> function
+
+printHelpForeverConditionalHidKeyboard -> function
+
+printHelpForeverConditionalTouch -> function
+
+printHelpForeverConditionalTouchAdapted -> function
+
+printHelpForeverConditionalTouchAnalog -> function
+
+printHelpForeverConditionalTouchClassic -> function
+
+printHelpForeverConditionalTouchDigital -> function
+
+printHelpForeverConditionalTouchFlick -> function
+
+printHelpForeverWithNumber -> function
+
+printString -> function
+
+printStringInStringNow -> function
+
+printStringNow -> function
+
+printStyledString -> function
+
+printText -> function
+
+printTextNow -> function
+
+printWith2NumbersBig -> function
+
+printWith2NumbersNow -> function
+
+printWith3Numbers -> function
+
+printWith4Numbers -> function
+
+printWith4NumbersNow -> function
+
+printWith6Numbers -> function
+
+printWithNumber -> function
+
+printWithNumberBig -> function
+
+printWithNumberNow -> function
+
+processLineOfSight -> function
+
+raknetBitStreamDecodeString -> function
+
+raknetBitStreamEncodeString -> function
+
+raknetBitStreamGetDataPtr -> function
+
+raknetBitStreamGetNumberOfBitsUsed -> function
+
+raknetBitStreamGetNumberOfBytesUsed -> function
+
+raknetBitStreamGetNumberOfUnreadBits -> function
+
+raknetBitStreamGetReadOffset -> function
+
+raknetBitStreamGetWriteOffset -> function
+
+raknetBitStreamIgnoreBits -> function
+
+raknetBitStreamReadBool -> function
+
+raknetBitStreamReadBuffer -> function
+
+raknetBitStreamReadFloat -> function
+
+raknetBitStreamReadInt16 -> function
+
+raknetBitStreamReadInt32 -> function
+
+raknetBitStreamReadInt8 -> function
+
+raknetBitStreamReadString -> function
+
+raknetBitStreamResetReadPointer -> function
+
+raknetBitStreamResetWritePointer -> function
+
+raknetBitStreamSetReadOffset -> function
+
+raknetBitStreamSetWriteOffset -> function
+
+raknetBitStreamWriteBitStream -> function
+
+raknetBitStreamWriteBool -> function
+
+raknetBitStreamWriteBuffer -> function
+
+raknetBitStreamWriteFloat -> function
+
+raknetBitStreamWriteInt16 -> function
+
+raknetBitStreamWriteInt32 -> function
+
+raknetBitStreamWriteInt8 -> function
+
+raknetBitStreamWriteString -> function
+
+raknetDeleteBitStream -> function
+
+raknetEmulPacketReceiveBitStream -> function
+
+raknetEmulRpcReceiveBitStream -> function
+
+raknetNewBitStream -> function
+
+raknetResetBitStream -> function
+
+raknetSendBitStream -> function
+
+raknetSendBitStreamEx -> function
+
+raknetSendRpc -> function
+
+raknetSendRpcEx -> function
+
+randomPassengerSay -> function
+
+rawequal -> function
+
+rawget -> function
+
+rawset -> function
+
+readKillFrenzyStatus -> function
+
+readMemory -> function
+
+registerAttractorScriptBrainForCodeUse -> function
+
+registerBestPosition -> function
+
+registerFastestTime -> function
+
+registerFloatStat -> function
+
+registerIntStat -> function
+
+registerMissionGiven -> function
+
+registerMissionPassed -> function
+
+registerOddjobMissionPassed -> function
+
+registerScriptBrainForCodeUse -> function
+
+releaseAudioStream -> function
+
+releaseEntityFromRopeForObject -> function
+
+releaseEntityFromWinch -> function
+
+releasePathNodes -> function
+
+releaseTwoPlayerDistance -> function
+
+releaseWeaponLock -> function
+
+releaseWeather -> function
+
+reloadScripts -> function
+
+removeAllCharWeapons -> function
+
+removeAllScriptFires -> function
+
+removeAnimation -> function
+
+removeBlip -> function
+
+removeButtonFlag -> function
+
+removeCarRecording -> function
+
+removeCharElegantly -> function
+
+removeCharFromCarMaintainPosition -> function
+
+removeCharFromGroup -> function
+
+removeDecisionMaker -> function
+
+removeGroup -> function
+
+removeIpl -> function
+
+removeIplDiscreetly -> function
+
+removeObjectElegantly -> function
+
+removeOilPuddlesInArea -> function
+
+removePickup -> function
+
+removePriceModifier -> function
+
+removeRcBuggy -> function
+
+removeScriptFire -> function
+
+removeSphere -> function
+
+removeStreamedScript -> function
+
+removeStuckCarCheck -> function
+
+removeTextureDictionary -> function
+
+removeUpsidedownCarCheck -> function
+
+removeUser3dMarker -> function
+
+removeVehicleMod -> function
+
+removeWeaponFromChar -> function
+
+removeWidgetFlag -> function
+
+renderCreateFont -> function
+
+renderDrawBox -> function
+
+renderDrawBoxWithBorder -> function
+
+renderDrawLine -> function
+
+renderDrawPolygon -> function
+
+renderDrawTexture -> function
+
+renderFontDrawText -> function
+
+renderGetFontDrawHeight -> function
+
+renderGetFontDrawTextLength -> function
+
+renderGetTextureSize -> function
+
+renderLoadTextureFromFile -> function
+
+renderLoadTextureFromFileInMemory -> function
+
+renderReleaseFont -> function
+
+renderReleaseTexture -> function
+
+reportMissionAudioEventAtCar -> function
+
+reportMissionAudioEventAtChar -> function
+
+reportMissionAudioEventAtObject -> function
+
+reportMissionAudioEventAtPosition -> function
+
+representFloatAsInt -> function
+
+representIntAsFloat -> function
+
+requestAnimation -> function
+
+requestCarRecording -> function
+
+requestCollision -> function
+
+requestIpl -> function
+
+requestModel -> function
+
+requestVehicleMod -> function
+
+require -> function
+
+resetNumOfModelsKilledByPlayer -> function
+
+resetStuffUponResurrection -> function
+
+resetVehicleCameraTweak -> function
+
+resetVehicleHydraulics -> function
+
+restoreCamera -> function
+
+restoreCameraJumpcut -> function
+
+restoreCarModState -> function
+
+restoreClock -> function
+
+restoreClothesState -> function
+
+rotateObject -> function
+
+sampAddChatMessage -> function
+
+sampCreate3dText -> function
+
+sampCreate3dTextEx -> function
+
+sampDestroy3dText -> function
+
+sampGet3dTextInfoById -> function
+
+sampGetCarHandleBySampVehicleId -> function
+
+sampGetCharHandleBySampPlayerId -> function
+
+sampGetCurrentDialogId -> function
+
+sampGetCurrentDialogType -> function
+
+sampGetCurrentServerAddress -> function
+
+sampGetCurrentServerName -> function
+
+sampGetDialogCaption -> function
+
+sampGetDialogText -> function
+
+sampGetMaxPlayerId -> function
+
+sampGetObjectHandleBySampId -> function
+
+sampGetObjectSampIdByHandle -> function
+
+sampGetPlayerAnimationId -> function
+
+sampGetPlayerArmor -> function
+
+sampGetPlayerColor -> function
+
+sampGetPlayerCount -> function
+
+sampGetPlayerHealth -> function
+
+sampGetPlayerIdByCharHandle -> function
+
+sampGetPlayerNickname -> function
+
+sampGetPlayerPing -> function
+
+sampGetPlayerScore -> function
+
+sampGetPlayerSpecialAction -> function
+
+sampGetVehicleIdByCarHandle -> function
+
+sampHasDialogRespond -> function
+
+sampIs3dTextDefined -> function
+
+sampIsChatCommandDefined -> function
+
+sampIsDialogActive -> function
+
+sampIsDialogClientside -> function
+
+sampIsLocalPlayerSpawned -> function
+
+sampIsPlayerConnected -> function
+
+sampIsPlayerNpc -> function
+
+sampIsPlayerPaused -> function
+
+sampProcessChatInput -> function
+
+sampRegisterChatCommand -> function
+
+sampRequestClass -> function
+
+sampSendAimData -> function
+
+sampSendBulletData -> function
+
+sampSendChat -> function
+
+sampSendClickPlayer -> function
+
+sampSendClickTextdraw -> function
+
+sampSendDamageVehicle -> function
+
+sampSendDeathByPlayer -> function
+
+sampSendDialogResponse -> function
+
+sampSendEditAttachedObject -> function
+
+sampSendEditObject -> function
+
+sampSendEnterVehicle -> function
+
+sampSendExitVehicle -> function
+
+sampSendGiveDamage -> function
+
+sampSendIncarData -> function
+
+sampSendInteriorChange -> function
+
+sampSendMenuQuit -> function
+
+sampSendMenuSelectRow -> function
+
+sampSendOnfootData -> function
+
+sampSendPassengerData -> function
+
+sampSendPickedUpPickup -> function
+
+sampSendRconCommand -> function
+
+sampSendRequestSpawn -> function
+
+sampSendScmEvent -> function
+
+sampSendSpawn -> function
+
+sampSendSpectatorData -> function
+
+sampSendTakeDamage -> function
+
+sampSendTrailerData -> function
+
+sampSendUnoccupiedData -> function
+
+sampSendVehicleDestroyed -> function
+
+sampSet3dTextString -> function
+
+sampSetClientCommandDescription -> function
+
+sampSetDialogClientside -> function
+
+sampSetSpecialAction -> function
+
+sampShowDialog -> function
+
+sampSpawnPlayer -> function
+
+sampStorePlayerAimData -> function
+
+sampStorePlayerIncarData -> function
+
+sampStorePlayerOnfootData -> function
+
+sampStorePlayerPassengerData -> function
+
+sampStorePlayerTrailerData -> function
+
+sampUnregisterChatCommand -> function
+
+script -> table
+
+script_author -> function
+
+script_authors -> function
+
+script_dependencies -> function
+
+script_description -> function
+
+script_moonloader -> function
+
+script_name -> function
+
+script_properties -> function
+
+script_url -> function
+
+script_version -> function
+
+script_version_number -> function
+
+select -> function
+
+selectWeaponsForVehicle -> function
+
+setActiveMenuItem -> function
+
+setActiveMenuItemCarMods -> function
+
+setAircraftCarrierSamSite -> function
+
+setAllCarsCanBeDamaged -> function
+
+setAllTaxisHaveNitro -> function
+
+setAlwaysDraw3dMarkers -> function
+
+setAnimGroupForChar -> function
+
+setArea51SamSite -> function
+
+setAreaName -> function
+
+setAudioStreamLooped -> function
+
+setAudioStreamState -> function
+
+setAudioStreamVolume -> function
+
+setBlipAlwaysDisplayOnZoomedRadar -> function
+
+setBlipAsFriendly -> function
+
+setBlipEntryExit -> function
+
+setBoatCruiseSpeed -> function
+
+setCameraBehindPlayer -> function
+
+setCameraInFrontOfChar -> function
+
+setCameraInFrontOfPlayer -> function
+
+setCameraPositionUnfixed -> function
+
+setCameraZoom -> function
+
+setCanBurstCarTires -> function
+
+setCanResprayCar -> function
+
+setCarAlwaysCreateSkids -> function
+
+setCarAsMissionCar -> function
+
+setCarAvoidLevelTransitions -> function
+
+setCarCanBeDamaged -> function
+
+setCarCanBeVisiblyDamaged -> function
+
+setCarCanGoAgainstTraffic -> function
+
+setCarCollision -> function
+
+setCarCoordinates -> function
+
+setCarCoordinatesNoOffset -> function
+
+setCarCruiseSpeed -> function
+
+setCarDensityMultiplier -> function
+
+setCarDrivingStyle -> function
+
+setCarEngineBroken -> function
+
+setCarEngineOn -> function
+
+setCarEscortCarFront -> function
+
+setCarEscortCarLeft -> function
+
+setCarEscortCarRear -> function
+
+setCarEscortCarRight -> function
+
+setCarFollowCar -> function
+
+setCarForwardSpeed -> function
+
+setCarHeading -> function
+
+setCarHealth -> function
+
+setCarHeavy -> function
+
+setCarHydraulics -> function
+
+setCarLightsOn -> function
+
+setCarMission -> function
+
+setCarModelComponents -> function
+
+setCarOnlyDamagedByPlayer -> function
+
+setCarProofs -> function
+
+setCarRandomRouteSeed -> function
+
+setCarRoll -> function
+
+setCarRotationVelocity -> function
+
+setCarStatus -> function
+
+setCarStayInFastLane -> function
+
+setCarStayInSlowLane -> function
+
+setCarStraightLineDistance -> function
+
+setCarStrong -> function
+
+setCarTempAction -> function
+
+setCarTraction -> function
+
+setCarVisible -> function
+
+setCarWatertight -> function
+
+setCharAccuracy -> function
+
+setCharAllowedToDuck -> function
+
+setCharAmmo -> function
+
+setCharAnimCurrentTime -> function
+
+setCharAnimPlayingFlag -> function
+
+setCharAnimSpeed -> function
+
+setCharBleeding -> function
+
+setCharBulletproofVest -> function
+
+setCharCanBeKnockedOffBike -> function
+
+setCharCanBeShotInVehicle -> function
+
+setCharCantBeDraggedOut -> function
+
+setCharCollision -> function
+
+setCharCoordinates -> function
+
+setCharCoordinatesDontWarpGang -> function
+
+setCharCoordinatesDontWarpGangNoOffset -> function
+
+setCharCoordinatesNoOffset -> function
+
+setCharDecisionMaker -> function
+
+setCharDropsWeaponsWhenDead -> function
+
+setCharDrownsInWater -> function
+
+setCharDruggedUp -> function
+
+setCharForceDieInCar -> function
+
+setCharGetOutUpsideDownCar -> function
+
+setCharHasUsedEntryExit -> function
+
+setCharHeading -> function
+
+setCharHealth -> function
+
+setCharInterior -> function
+
+setCharIsChrisCriminal -> function
+
+setCharIsTargetPriority -> function
+
+setCharKeepTask -> function
+
+setCharKindaStayInSamePlace -> function
+
+setCharMaxHealth -> function
+
+setCharMoney -> function
+
+setCharNeverLeavesGroup -> function
+
+setCharNeverTargetted -> function
+
+setCharOnlyDamagedByPlayer -> function
+
+setCharProofs -> function
+
+setCharQuaternion -> function
+
+setCharRelationship -> function
+
+setCharRotation -> function
+
+setCharSayContext -> function
+
+setCharSayContextImportant -> function
+
+setCharSayScript -> function
+
+setCharShootRate -> function
+
+setCharSignalAfterKill -> function
+
+setCharStayInCarWhenJacked -> function
+
+setCharStayInSamePlace -> function
+
+setCharSuffersCriticalHits -> function
+
+setCharSwimSpeed -> function
+
+setCharUsesCollisionClosestObjectOfType -> function
+
+setCharUsesUpperbodyDamageAnimsOnly -> function
+
+setCharVelocity -> function
+
+setCharVisible -> function
+
+setCharWantedByPolice -> function
+
+setCharWeaponSkill -> function
+
+setCheckpointCoords -> function
+
+setCheckpointHeading -> function
+
+setCinemaCamera -> function
+
+setClipboardText -> function
+
+setClosestEntryExitFlag -> function
+
+setCollectable1Total -> function
+
+setCoordBlipAppearance -> function
+
+setCreateRandomCops -> function
+
+setCreateRandomGangMembers -> function
+
+setCurrentCharWeapon -> function
+
+setCutsceneModelTexture -> function
+
+setCutsceneOffset -> function
+
+setDarknessEffect -> function
+
+setDeathWeaponsPersist -> function
+
+setDeatharrestState -> function
+
+setDisableMilitaryZones -> function
+
+setDrunkInputDelay -> function
+
+setEnableRcDetonate -> function
+
+setEnableRcDetonateOnContact -> function
+
+setEquippedItem -> function
+
+setEveryoneIgnorePlayer -> function
+
+setExtraCarColours -> function
+
+setExtraColours -> function
+
+setExtraHospitalRestartPoint -> function
+
+setExtraPoliceStationRestartPoint -> function
+
+setFadingColour -> function
+
+setFirstPersonInCarCameraMode -> function
+
+setFixedCameraPosition -> function
+
+setFloatStat -> function
+
+setFollowNodeThresholdDistance -> function
+
+setForceRandomCarModel -> function
+
+setFreeGxtEntry -> function
+
+setFreeHealthCare -> function
+
+setFreeResprays -> function
+
+setFreebiesInVehicle -> function
+
+setGameKeyState -> function
+
+setGangWarsActive -> function
+
+setGangWarsTrainingMission -> function
+
+setGangWeapons -> function
+
+setGarageResprayFree -> function
+
+setGroupDecisionMaker -> function
+
+setGroupDefaultTaskAllocator -> function
+
+setGroupFollowStatus -> function
+
+setGroupLeader -> function
+
+setGroupMember -> function
+
+setGroupSeparationRange -> function
+
+setGroupSequence -> function
+
+setGunshotSenseRangeForRiot2 -> function
+
+setGxtEntry -> function
+
+setHasBeenOwnedForCarGenerator -> function
+
+setHeadingForAttachedPlayer -> function
+
+setHeadingLimitForAttachedChar -> function
+
+setHeathazeEffect -> function
+
+setHeliBladesFullSpeed -> function
+
+setHeliOrientation -> function
+
+setHeliReachedTargetDistance -> function
+
+setHeliStabiliser -> function
+
+setHelpMessageBoxSize -> function
+
+setInformRespectedFriends -> function
+
+setInfraredVision -> function
+
+setIntStat -> function
+
+setInteriorVisible -> function
+
+setInterpolationParameters -> function
+
+setLaRiots -> function
+
+setLoadCollisionForCarFlag -> function
+
+setLoadCollisionForCharFlag -> function
+
+setMaxFireGenerations -> function
+
+setMaxWantedLevel -> function
+
+setMenuColumn -> function
+
+setMenuColumnOrientation -> function
+
+setMenuColumnWidth -> function
+
+setMenuItemWith2Numbers -> function
+
+setMenuItemWithNumber -> function
+
+setMessageFormatting -> function
+
+setMinigameInProgress -> function
+
+setMissionAudioPosition -> function
+
+setMissionRespectTotal -> function
+
+setMissionTrainCoordinates -> function
+
+setMusicDoesFade -> function
+
+setNamedEntryExitFlag -> function
+
+setNearClip -> function
+
+setNextDesiredMoveState -> function
+
+setNightVision -> function
+
+setNoResprays -> function
+
+setObjectAnimCurrentTime -> function
+
+setObjectAnimSpeed -> function
+
+setObjectAsStealable -> function
+
+setObjectCollision -> function
+
+setObjectCollisionDamageEffect -> function
+
+setObjectCoordinates -> function
+
+setObjectCoordinatesAndVelocity -> function
+
+setObjectDrawLast -> function
+
+setObjectDynamic -> function
+
+setObjectHeading -> function
+
+setObjectHealth -> function
+
+setObjectMass -> function
+
+setObjectOnlyDamagedByPlayer -> function
+
+setObjectProofs -> function
+
+setObjectQuaternion -> function
+
+setObjectRecordsCollisions -> function
+
+setObjectRenderScorched -> function
+
+setObjectRotation -> function
+
+setObjectRotationVelocity -> function
+
+setObjectScale -> function
+
+setObjectTurnMass -> function
+
+setObjectVelocity -> function
+
+setObjectVisible -> function
+
+setOnlyCreateGangMembers -> function
+
+setOnscreenCounterFlashWhenFirstDisplayed -> function
+
+setPedDensityMultiplier -> function
+
+setPetrolTankWeakpoint -> function
+
+setPhotoCameraEffect -> function
+
+setPlaneThrottle -> function
+
+setPlaneUndercarriageUp -> function
+
+setPlay3dAudioStreamAtCar -> function
+
+setPlay3dAudioStreamAtChar -> function
+
+setPlay3dAudioStreamAtCoordinates -> function
+
+setPlay3dAudioStreamAtObject -> function
+
+setPlaybackSpeed -> function
+
+setPlayerCanDoDriveBy -> function
+
+setPlayerControl -> function
+
+setPlayerDisplayVitalStatsButton -> function
+
+setPlayerDrunkenness -> function
+
+setPlayerDuckButton -> function
+
+setPlayerEnterCarButton -> function
+
+setPlayerFastReload -> function
+
+setPlayerFireButton -> function
+
+setPlayerGroupRecruitment -> function
+
+setPlayerGroupToFollowAlways -> function
+
+setPlayerGroupToFollowNever -> function
+
+setPlayerInCarCameraMode -> function
+
+setPlayerIsInStadium -> function
+
+setPlayerJumpButton -> function
+
+setPlayerModel -> function
+
+setPlayerMood -> function
+
+setPlayerNeverGetsTired -> function
+
+setPlayerPlayerTargetting -> function
+
+setPlayerWeaponsScrollable -> function
+
+setPlayersCanBeInSeparateCars -> function
+
+setPoliceIgnorePlayer -> function
+
+setPoolTableCoords -> function
+
+setProgressTotal -> function
+
+setRadarZoom -> function
+
+setRadioChannel -> function
+
+setRadioToPlayersFavouriteStation -> function
+
+setRailtrackResistanceMult -> function
+
+setRelationship -> function
+
+setRespawnPointForDurationOfMission -> function
+
+setRopeHeightForObject -> function
+
+setScriptCoopGame -> function
+
+setScriptLimitToGangSize -> function
+
+setSearchlightClipIfColliding -> function
+
+setSenseRange -> function
+
+setSequenceToRepeat -> function
+
+setSliderRange -> function
+
+setSpecificZoneToTriggerGangWar -> function
+
+setSpritesDrawBeforeFade -> function
+
+setStructElement -> function
+
+setStructFloatElement -> function
+
+setTagStatusInArea -> function
+
+setTargetCarForMissionGarage -> function
+
+setTaxiLights -> function
+
+setTextBackground -> function
+
+setTextCentre -> function
+
+setTextCentreSize -> function
+
+setTextColour -> function
+
+setTextDrawBeforeFade -> function
+
+setTextDropshadow -> function
+
+setTextEdge -> function
+
+setTextFont -> function
+
+setTextJustify -> function
+
+setTextProportional -> function
+
+setTextRightJustify -> function
+
+setTextScale -> function
+
+setTextWrapx -> function
+
+setTimeOfDay -> function
+
+setTimeOneDayForward -> function
+
+setTimeScale -> function
+
+setTimerBeepCountdownTime -> function
+
+setTotalNumberOfMissions -> function
+
+setTrainCruiseSpeed -> function
+
+setTrainForcedToSlowDown -> function
+
+setTrainSpeed -> function
+
+setTwoPlayerCameraMode -> function
+
+setUpConversationEndNodeWithScriptedSpeech -> function
+
+setUpConversationEndNodeWithSpeech -> function
+
+setUpConversationNodeWithScriptedSpeech -> function
+
+setUpConversationNodeWithSpeech -> function
+
+setUpSkip -> function
+
+setUpSkipAfterMission -> function
+
+setUpSkipForSpecificVehicle -> function
+
+setUpSkipForVehicleFinishedByScript -> function
+
+setUpsidedownCarNotDamaged -> function
+
+setUsesCollisionOfClosestObjectOfType -> function
+
+setVehicleAirResistanceMultiplier -> function
+
+setVehicleCameraTweak -> function
+
+setVehicleCanBeTargetted -> function
+
+setVehicleDirtLevel -> function
+
+setVehicleInterior -> function
+
+setVehicleIsConsideredByPlayer -> function
+
+setVehicleQuaternion -> function
+
+setVehicleToFadeIn -> function
+
+setVisibilityOfClosestObjectOfType -> function
+
+setWantedMultiplier -> function
+
+setWeatherToAppropriateTypeNow -> function
+
+setWidgetInfo -> function
+
+setWidgetInfo2 -> function
+
+setWidgetSliderRange -> function
+
+setWidgetTexture -> function
+
+setWidgetValue -> function
+
+setWidgetValue2 -> function
+
+setWidgetValue3 -> function
+
+setZoneDealerStrength -> function
+
+setZoneForGangWarsTraining -> function
+
+setZoneGangStrength -> function
+
+setZoneNoCops -> function
+
+setZonePopulationRace -> function
+
+setZonePopulationType -> function
+
+setfenv -> function
+
+setmetatable -> function
+
+shakeCam -> function
+
+shakePad -> function
+
+showBlipsOnAllLevels -> function
+
+showUpdateStats -> function
+
+shuffleCardDecks -> function
+
+shutAllCharsUp -> function
+
+shutCharUp -> function
+
+shutCharUpForScriptedSpeech -> function
+
+skipCutsceneEnd -> function
+
+skipInPlaybackRecordedCar -> function
+
+skipToEndAndStopPlaybackRecordedCar -> function
+
+skipToNextAllowedStation -> function
+
+slideObject -> function
+
+sol.::audiostream_wrapper.♻ -> userdata
+
+sol.lua::script::lua_info.♻ -> userdata
+
+sol.lua::thread.♻ -> userdata
+
+sol.☢☢ -> userdata
+
+sol.📌 -> thread
+
+sol.🔩 -> function
+
+sortOutObjectCollisionWithCar -> function
+
+startCarFire -> function
+
+startCharFacialTalk -> function
+
+startCharFire -> function
+
+startCredits -> function
+
+startCutscene -> function
+
+startKillFrenzy -> function
+
+startNewStreamedScript -> function
+
+startPlaybackRecordedCar -> function
+
+startPlaybackRecordedCarLooped -> function
+
+startPlaybackRecordedCarUsingAi -> function
+
+startScriptFire -> function
+
+startSettingUpConversation -> function
+
+stopBeatTrack -> function
+
+stopCharFacialTalk -> function
+
+stopCredits -> function
+
+stopFxSystem -> function
+
+stopPlaybackRecordedCar -> function
+
+storeCarCharIsAttachedToNoSave -> function
+
+storeCarCharIsIn -> function
+
+storeCarCharIsInNoSave -> function
+
+storeCarModState -> function
+
+storeClock -> function
+
+storeClosestEntities -> function
+
+storeClothesState -> function
+
+storeWantedLevel -> function
+
+streamScript -> function
+
+string -> table
+
+suppressCarModel -> function
+
+swapNearestBuildingModel -> function
+
+switchAmbientPlanes -> function
+
+switchArrestPenalties -> function
+
+switchAudioZone -> function
+
+switchCarEngine -> function
+
+switchCarGenerator -> function
+
+switchCarSiren -> function
+
+switchCopsOnBikes -> function
+
+switchDeathPenalties -> function
+
+switchEmergencyServices -> function
+
+switchEntryExit -> function
+
+switchObjectBrains -> function
+
+switchOnGroundSearchlight -> function
+
+switchPedRoadsBackToOriginal -> function
+
+switchPedRoadsOff -> function
+
+switchPedRoadsOn -> function
+
+switchPoliceHelis -> function
+
+switchRandomTrains -> function
+
+switchRoadsBackToOriginal -> function
+
+switchRoadsOff -> function
+
+switchRoadsOn -> function
+
+switchStreaming -> function
+
+switchWidescreen -> function
+
+switchWorldProcessing -> function
+
+syncWater -> function
+
+table -> table
+
+takePhoto -> function
+
+takeRemoteControlOfCar -> function
+
+taskAchieveHeading -> function
+
+taskAimGunAtChar -> function
+
+taskAimGunAtCoord -> function
+
+taskCarDriveToCoord -> function
+
+taskCarDriveWander -> function
+
+taskCarMission -> function
+
+taskCarTempAction -> function
+
+taskCharArrestChar -> function
+
+taskCharSlideToCoord -> function
+
+taskCharSlideToCoordAndPlayAnim -> function
+
+taskChatWithChar -> function
+
+taskClimb -> function
+
+taskComplexPickupObject -> function
+
+taskCower -> function
+
+taskDead -> function
+
+taskDestroyCar -> function
+
+taskDie -> function
+
+taskDieNamedAnim -> function
+
+taskDiveAndGetUp -> function
+
+taskDiveFromAttachmentAndGetUp -> function
+
+taskDriveBy -> function
+
+taskDrivePointRoute -> function
+
+taskDrivePointRouteAdvanced -> function
+
+taskDuck -> function
+
+taskEnterCarAsDriver -> function
+
+taskEnterCarAsPassenger -> function
+
+taskEveryoneLeaveCar -> function
+
+taskFallAndGetUp -> function
+
+taskFleeChar -> function
+
+taskFleeCharAnyMeans -> function
+
+taskFleePoint -> function
+
+taskFollowFootsteps -> function
+
+taskFollowPathNodesToCoord -> function
+
+taskFollowPathNodesToCoordWithRadius -> function
+
+taskFollowPatrolRoute -> function
+
+taskFollowPointRoute -> function
+
+taskGoStraightToCoord -> function
+
+taskGoToCoordAnyMeans -> function
+
+taskGoToCoordWhileAiming -> function
+
+taskGoToCoordWhileShooting -> function
+
+taskGoToObject -> function
+
+taskGotoCar -> function
+
+taskGotoChar -> function
+
+taskGotoCharAiming -> function
+
+taskGotoCharOffset -> function
+
+taskGreetPartner -> function
+
+taskHandGesture -> function
+
+taskHandsUp -> function
+
+taskJetpack -> function
+
+taskJump -> function
+
+taskKillCharOnFoot -> function
+
+taskKillCharOnFootTimed -> function
+
+taskKillCharOnFootWhileDucking -> function
+
+taskKindaStayInSamePlace -> function
+
+taskLeaveAnyCar -> function
+
+taskLeaveCar -> function
+
+taskLeaveCarAndFlee -> function
+
+taskLeaveCarImmediately -> function
+
+taskLookAbout -> function
+
+taskLookAtChar -> function
+
+taskLookAtCoord -> function
+
+taskLookAtObject -> function
+
+taskLookAtVehicle -> function
+
+taskPause -> function
+
+taskPickUpObject -> function
+
+taskPickUpSecondObject -> function
+
+taskPlayAnim -> function
+
+taskPlayAnimNonInterruptable -> function
+
+taskPlayAnimSecondary -> function
+
+taskPlayAnimWithFlags -> function
+
+taskSay -> function
+
+taskScratchHead -> function
+
+taskSetCharDecisionMaker -> function
+
+taskSetIgnoreWeaponRangeFlag -> function
+
+taskShakeFist -> function
+
+taskShootAtChar -> function
+
+taskShootAtCoord -> function
+
+taskShuffleToNextCarSeat -> function
+
+taskSitDown -> function
+
+taskSmartFleeChar -> function
+
+taskSmartFleePoint -> function
+
+taskStandStill -> function
+
+taskStayInSamePlace -> function
+
+taskSwimToCoord -> function
+
+taskTired -> function
+
+taskToggleDuck -> function
+
+taskTogglePedThreatScanner -> function
+
+taskTurnCharToFaceChar -> function
+
+taskTurnCharToFaceCoord -> function
+
+taskUseAtm -> function
+
+taskUseAttractor -> function
+
+taskUseClosestMapAttractor -> function
+
+taskUseMobilePhone -> function
+
+taskWalkAlongsideChar -> function
+
+taskWanderStandard -> function
+
+taskWarpCharIntoCarAsDriver -> function
+
+taskWarpCharIntoCarAsPassenger -> function
+
+taskWeaponRoll -> function
+
+thisScript -> function
+
+tonumber -> function
+
+tostring -> function
+
+turnCarToFaceCoord -> function
+
+type -> function
+
+unloadSpecialCharacter -> function
+
+unlockAchievement -> function
+
+unmarkAllRoadNodesAsDontWander -> function
+
+unpack -> function
+
+unpausePlaybackRecordedCar -> function
+
+updatePickupMoneyPerDay -> function
+
+useDetonator -> function
+
+useRenderCommands -> function
+
+vehicleCanBeTargettedByHsMissile -> function
+
+vehicleDoesProvideCover -> function
+
+wait -> function
+
+warpCharFromCarToCoord -> function
+
+warpCharIntoCar -> function
+
+warpCharIntoCarAsPassenger -> function
+
+wasCutsceneSkipped -> function
+
+winchCanPickObjectUp -> function
+
+winchCanPickVehicleUp -> function
+
+writeLog -> function
+
+writeLogFloat -> function
+
+writeLogInt -> function
+
+writeMemory -> function
+
+xpcall -> function
+
+setCharWeaponSkill -> function
+setTextEdge -> function
+setCarEngineBroken -> function
+isThisModelABoat -> function
+isThisModelAPlane -> function
+isThisModelAHeli -> function
+setFirstPersonInCarCameraMode -> function
+taskGreetPartner -> function
+setHeliBladesFullSpeed -> function
+displayHud -> function
+connectLods -> function
+setMaxFireGenerations -> function
+taskDieNamedAnim -> function
+setPlayerDuckButton -> function
+setPoolTableCoords -> function
+hasObjectBeenPhotographed -> function
+doCameraBump -> function
+getCurrentDate -> function
+setObjectAnimSpeed -> function
+isObjectPlayingAnim -> function
+getObjectAnimCurrentTime -> function
+setObjectAnimCurrentTime -> function
+setCharVelocity -> function
+getCharVelocity -> function
+setCharRotation -> function
+getCarUprightValue -> function
+setVehicleInterior -> function
+selectWeaponsForVehicle -> function
+getCityPlayerIsIn -> function
+getNameOfZone -> function
+activateInteriorPeds -> function
+setVehicleCanBeTargetted -> function
+taskFollowFootsteps -> function
+damageChar -> function
+setCarCanBeVisiblyDamaged -> function
+setHeliReachedTargetDistance -> function
+getSoundLevelAtCoords -> function
+setCharAllowedToDuck -> function
+setHeadingForAttachedPlayer -> function
+taskWalkAlongsideChar -> function
+createEmergencyServicesCar -> function
+taskKindaStayInSamePlace -> function
+startPlaybackRecordedCarLooped -> function
+setCharInterior -> function
+isAttachedPlayerHeadingAchieved -> function
+enableEntryExitPlayerGroupWarping -> function
+getClosestStealableObject -> function
+isProceduralInteriorActive -> function
+removeCarRecording -> function
+setZonePopulationRace -> function
+setObjectOnlyDamagedByPlayer -> function
+createBirds -> function
+setVehicleDirtLevel -> function
+setGangWarsActive -> function
+isGangWarGoingOn -> function
+givePlayerClothesOutsideShop -> function
+clearLoadedShop -> function
+setGroupSequence -> function
+setCharDropsWeaponsWhenDead -> function
+setCharNeverLeavesGroup -> function
+setPlayerFireButton -> function
+attachFxSystemToCharBone -> function
+registerAttractorScriptBrainForCodeUse -> function
+setHeadingLimitForAttachedChar -> function
+addBlipForDeadChar -> function
+getDeadCharCoordinates -> function
+taskPlayAnimWithFlags -> function
+setVehicleAirResistanceMultiplier -> function
+setCarCoordinatesNoOffset -> function
+setUsesCollisionOfClosestObjectOfType -> function
+setTimeOneDayForward -> function
+setTimerBeepCountdownTime -> function
+attachTrailerToCab -> function
+isVehicleTouchingObject -> function
+enableCraneControls -> function
+isPlayerInPositionForConversation -> function
+enableConversation -> function
+getRandomCharInSphereOnlyDrugsBuyers -> function
+getPedType -> function
+taskUseClosestMapAttractor -> function
+planeAttackPlayerUsingDogFight -> function
+canTriggerGangWarWhenOnAMission -> function
+controlMovableVehiclePart -> function
+winchCanPickVehicleUp -> function
+openCarDoorABit -> function
+isCarDoorFullyOpen -> function
+setAlwaysDraw3dMarkers -> function
+streamScript -> function
+hasStreamedScriptLoaded -> function
+setGangWarsTrainingMission -> function
+setCharHasUsedEntryExit -> function
+setCharMaxHealth -> function
+setNightVision -> function
+setInfraredVision -> function
+setZoneForGangWarsTraining -> function
+setCharCanBeKnockedOffBike -> function
+setCharCoordinatesDontWarpGang -> function
+addPriceModifier -> function
+removePriceModifier -> function
+initZonePopulationSettings -> function
+explodeCarInCutsceneShakeAndBits -> function
+isSkipCutsceneButtonPressed -> function
+getCutsceneOffset -> function
+setObjectScale -> function
+getCurrentPopulationZoneType -> function
+createMenu -> function
+setMenuColumnOrientation -> function
+getMenuItemSelected -> function
+getMenuItemAccepted -> function
+setGroupDefaultTaskAllocator -> function
+setPlayerGroupRecruitment -> function
+activateHeliSpeedCheat -> function
+taskSetCharDecisionMaker -> function
+deleteMissionTrain -> function
+markMissionTrainAsNoLongerNeeded -> function
+setBlipAlwaysDisplayOnZoomedRadar -> function
+requestCarRecording -> function
+hasCarRecordingBeenLoaded -> function
+getObjectQuaternion -> function
+setObjectQuaternion -> function
+getVehicleQuaternion -> function
+setVehicleQuaternion -> function
+setMissionTrainCoordinates -> function
+taskComplexPickupObject -> function
+listenToPlayerGroupCommands -> function
+setPlayerEnterCarButton -> function
+taskCharSlideToCoord -> function
+getCurrentDayOfWeek -> function
+registerScriptBrainForCodeUse -> function
+applyForceToCar -> function
+addToCarRotationVelocity -> function
+setCarRotationVelocity -> function
+setCharShootRate -> function
+isModelInCdimage -> function
+removeOilPuddlesInArea -> function
+setBlipAsFriendly -> function
+taskSwimToCoord -> function
+getModelDimensions -> function
+copyCharDecisionMaker -> function
+copyGroupDecisionMaker -> function
+script_name -> function
+script_author -> function
+script_authors -> function
+script_description -> function
+script_version -> function
+script_version_number -> function
+script_url -> function
+thisScript -> function
+assert -> function
+unpack -> function
