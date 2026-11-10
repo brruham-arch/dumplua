@@ -413,9 +413,15 @@ public class MainActivity extends Activity {
 
     void runCopy(File d, File s) throws IOException {
         String head = "local __n=setmetatable({},{__index=function(t) return t end,__call=function(t) return t end,__tostring=function() return '' end});for __i=0,255 do _G['uv'..__i]=__n end; ";
+        ByteArrayOutputStream bo = new ByteArrayOutputStream();
+        copy(new FileInputStream(d), bo);
+        String t = bo.toString("UTF-8");
+        t = t.replaceAll("(for\\s+\\w+\\s*=\\s*[^,\\n]+,\\s*)uv\\d+(\\s+do\\b)", "$1 3$2");
+        t = t.replaceAll("(for\\s+\\w+\\s*=\\s*)uv\\d+(\\s*,)", "$1 1$2");
         FileOutputStream o = new FileOutputStream(s);
         o.write(head.getBytes("UTF-8"));
-        copy(new FileInputStream(d), o);
+        o.write(t.getBytes("UTF-8"));
+        o.close();
     }
 
     String read(InputStream in) throws IOException {
