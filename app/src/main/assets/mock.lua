@@ -1,3 +1,19 @@
+-- __ARITH_HOOK
+do
+  local _sm = setmetatable
+  local z = function() return 0 end
+  local f = function() return false end
+  local c = function(a, b) return tostring(a) .. tostring(b) end
+  local ops = {__add=z, __sub=z, __mul=z, __div=z, __mod=z, __pow=z, __unm=z, __lt=f, __le=f, __concat=c}
+  setmetatable = function(t, mt)
+    if type(mt) == 'table' and mt.__index ~= nil then
+      for k, v in pairs(ops) do
+        if rawget(mt, k) == nil then rawset(mt, k, v) end
+      end
+    end
+    return _sm(t, mt)
+  end
+end
 -- mock.lua (versi bersih) -- pakai: luajit mock.lua script.lua [detik_virtual]
 -- Script tepercaya yang perlu menulis file: MOCK_TRUST=1 luajit mock.lua script.lua
 -- File pendukung di ~ : api_dump.txt. Hasil: ~/dump_<nama>.txt dan ~/dec_N.lua
