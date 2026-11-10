@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
     static final int BLUE = 0xFF3D6EF5;
 
     File home;
+    String decNote = "";
     LinearLayout statusCard, pageRingkas, pageTeknis;
     TextView errText, stTitle, stSub, fileName, summary, blockText, apiCount, apiText, unkText, tabA, tabB;
 
@@ -84,6 +85,9 @@ public class MainActivity extends Activity {
         super.onCreate(b);
         if (getActionBar() != null) getActionBar().hide();
         home = getFilesDir();
+        if (android.os.Build.VERSION.SDK_INT >= 23 && checkSelfPermission(
+                android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != android.content.pm.PackageManager.PERMISSION_GRANTED)
+            requestPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 2);
 
         ScrollView sv = new ScrollView(this);
         sv.setBackgroundColor(BG);
@@ -292,6 +296,7 @@ public class MainActivity extends Activity {
         apiCount.setText("FUNGSI YANG DIPAKAI SCRIPT (" + n + ")");
         apiText.setText(api.length() == 0 ? "(kosong)" : api);
         unkText.setText(unk.length() == 0 ? "(kosong)" : unk);
+        if (decNote.length() > 0) summary.setText(summary.getText() + "\n\n" + decNote);
     }
 
     String section(String s, String a, String b) {
@@ -304,16 +309,21 @@ public class MainActivity extends Activity {
     }
 
     String go(Uri u) throws Exception {
+        decNote = "";
         copyAsset("mock.lua", new File(home, "mock.lua"));
         copyAsset("api_dump.txt", new File(home, "api_dump.txt"));
         File sb = new File(home, "sandbox");
         sb.mkdirs();
         File s = new File(sb, "script.lua");
         copy(getContentResolver().openInputStream(u), new FileOutputStream(s));
-        if (nonGc64(s)) {
+        if (isBc(s)) {
             File d = new File(sb, "decompiled.lua");
-            if (decompile(s, d) == null) copy(new FileInputStream(d), new FileOutputStream(s));
-            else return scan(s);
+            boolean ok = decompile(s, d) == null;
+            if (ok) saveDec(d, nameOf(u));
+            if (nonGc64(s)) {
+                if (ok) copy(new FileInputStream(d), new FileOutputStream(s));
+                else return scan(s);
+            }
         }
         new File(home, "dump_script.lua.txt").delete();
         String lib = getApplicationInfo().nativeLibraryDir + "/libluajit_exec.so";
@@ -375,6 +385,29 @@ public class MainActivity extends Activity {
             return (r.length() == 0 && out.length() > 0) ? null : "dec: " + r;
         } catch (Throwable t) {
             return "dec: " + t;
+        }
+    }
+
+    boolean isBc(File f) throws IOException {
+        FileInputStream in = new FileInputStream(f);
+        byte[] h = new byte[3];
+        int n = in.read(h);
+        in.close();
+        return n == 3 && h[0] == 0x1B && h[1] == 'L' && h[2] == 'J';
+    }
+
+    void saveDec(File d, String name) {
+        try {
+            File dir = new File(android.os.Environment.getExternalStoragePublicDirectory(
+                android.os.Environment.DIRECTORY_DOWNLOADS), "dumplua");
+            dir.mkdirs();
+            int dot = name.lastIndexOf('.');
+            String base = dot > 0 ? name.substring(0, dot) : name;
+            File o = new File(dir, base + "_dec.lua");
+            copy(new FileInputStream(d), new FileOutputStream(o));
+            decNote = "Hasil decompile (.lua) disimpan di:\n" + o.getPath();
+        } catch (Exception e) {
+            decNote = "Hasil decompile gagal disimpan ke Download: " + e;
         }
     }
 
