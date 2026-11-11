@@ -24,6 +24,8 @@ public class MainActivity extends Activity {
 
     File home;
     String decNote = "";
+    String linkNote = "";
+    boolean linkWarn;
     LinearLayout statusCard, pageRingkas, pageTeknis;
     TextView errText, stTitle, stSub, fileName, summary, blockText, apiCount, apiText, unkText, tabA, tabB;
 
@@ -297,6 +299,9 @@ public class MainActivity extends Activity {
         apiText.setText(api.length() == 0 ? "(kosong)" : api);
         unkText.setText(unk.length() == 0 ? "(kosong)" : unk);
         if (decNote.length() > 0) summary.setText(summary.getText() + "\n\n" + decNote);
+        if (linkNote.length() > 0) summary.setText(summary.getText() + "\n\n" + linkNote);
+        if (linkWarn && !key && !err.contains("SYNTAX:"))
+            show("HATI-HATI", "Ada link yang berpotensi dipakai mengirim data keluar atau mengunduh file. Lihat rincian di RINGKASAN.", AMBER);
     }
 
     String section(String s, String a, String b) {
@@ -310,15 +315,19 @@ public class MainActivity extends Activity {
 
     String go(Uri u) throws Exception {
         decNote = "";
+        linkNote = "";
+        linkWarn = false;
         copyAsset("mock.lua", new File(home, "mock.lua"));
         copyAsset("api_dump.txt", new File(home, "api_dump.txt"));
         File sb = new File(home, "sandbox");
         sb.mkdirs();
         File s = new File(sb, "script.lua");
         copy(getContentResolver().openInputStream(u), new FileOutputStream(s));
+        linkNote = links(s);
         if (isBc(s)) {
             File d = new File(sb, "decompiled.lua");
             boolean ok = decompile(s, d) == null;
+            if (ok) linkNote = links(d);
             if (ok) saveDec(d, nameOf(u));
             if (nonGc64(s)) {
                 if (ok) runCopy(d, s);
@@ -422,6 +431,63 @@ public class MainActivity extends Activity {
         o.write(head.getBytes("UTF-8"));
         o.write(t.getBytes("UTF-8"));
         o.close();
+    }
+
+    String classify(String url) {
+        String u = url.toLowerCase();
+        if (u.contains("discord.com/api/webhooks") || u.contains("discordapp.com/api/webhooks")) return "WEBHOOK Discord (bisa kirim data keluar)";
+        if (u.contains("api.telegram.org")) return "Bot Telegram API (bisa kirim data keluar)";
+        if (u.matches("(?s).*\\.(apk|zip|exe|so|lua|luac|dex|bin)([?#].*)?$")) return "File unduhan";
+        if (u.matches("(?s)^(https?://)?\\d{1,3}(\\.\\d{1,3}){3}.*")) return "Alamat IP langsung";
+        if (u.matches("(?s)^(https?://)?(www\\.)?(bit\\.ly|tinyurl\\.com|cutt\\.ly|is\\.gd|t\\.co|rb\\.gy|shorturl\\.at)/.*")) return "Pemendek link (tujuan tersembunyi)";
+        if (u.contains("discord.gg") || u.contains("discord.com/invite") || u.contains("discordapp.com/invite")) return "Undangan Discord";
+        if (u.contains("discord.com") || u.contains("discordapp.com")) return "Discord";
+        if (u.contains("t.me/") || u.contains("telegram.me/")) return "Telegram";
+        if (u.contains("raw.githubusercontent.com") || u.contains("gist.github")) return "GitHub (file/kode mentah)";
+        if (u.contains("github.com")) return "GitHub";
+        if (u.contains("pastebin.com") || u.contains("hastebin") || u.contains("paste.")) return "Situs paste (bisa berisi kode)";
+        if (u.contains("youtube.com") || u.contains("youtu.be")) return "YouTube";
+        if (u.contains("wa.me") || u.contains("whatsapp.com")) return "WhatsApp";
+        if (u.contains("tiktok.com")) return "TikTok";
+        if (u.contains("instagram.com")) return "Instagram";
+        return "Lainnya";
+    }
+
+    boolean risky(String k) {
+        return k.startsWith("WEBHOOK") || k.startsWith("Bot Telegram") || k.equals("File unduhan")
+            || k.startsWith("Alamat IP") || k.startsWith("Pemendek") || k.startsWith("GitHub (file")
+            || k.startsWith("Situs paste");
+    }
+
+    String links(File f) {
+        try {
+            linkWarn = false;
+            byte[] b = new byte[(int) f.length()];
+            DataInputStream in = new DataInputStream(new FileInputStream(f));
+            in.readFully(b);
+            in.close();
+            StringBuilder all = new StringBuilder(), cur = new StringBuilder();
+            for (int i = 0; i <= b.length; i++) {
+                int c = i < b.length ? b[i] & 0xFF : 0;
+                if (c >= 32 && c < 127) cur.append((char) c);
+                else { if (cur.length() >= 6) all.append(cur).append('\n'); cur.setLength(0); }
+            }
+            java.util.regex.Matcher m = java.util.regex.Pattern.compile(
+                "(?i)(?:https?://|www\\.)[^\\s\"'<>\\\\)\\]]+|\\b(?:discord\\.gg|t\\.me|wa\\.me|bit\\.ly|youtu\\.be)/[^\\s\"'<>\\\\)\\]]+").matcher(all);
+            java.util.LinkedHashSet<String> set = new java.util.LinkedHashSet<String>();
+            while (m.find() && set.size() < 30) set.add(m.group().replaceAll("[.,;:!?]+$", ""));
+            if (set.isEmpty()) return "Link di dalam script: tidak ada";
+            StringBuilder o = new StringBuilder("Link yang tertulis di script (" + set.size() + "), hanya teks, belum tentu diakses:");
+            for (String u : set) {
+                String k = classify(u);
+                boolean r = risky(k);
+                if (r) linkWarn = true;
+                o.append("\n").append(r ? "\u26A0 " : "\u2022 ").append("[").append(k).append("] ").append(u);
+            }
+            return o.toString();
+        } catch (Exception e) {
+            return "";
+        }
     }
 
     String read(InputStream in) throws IOException {
